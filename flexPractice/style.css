@@ -1,0 +1,39 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header {
+    min-height: 60px;
+    background-color: lightskyblue;
+}
+footer {
+    min-height: 60px;
+    background-color: lightgreen;
+}
+section {
+    display: flex;
+    flex-grow: 1;
+}
+.box {
+    font-size: 50px;
+    text-align: center;
+}
+.left {
+    background-color: darkcyan;
+    flex: 1;
+}
+.center {
+    background-color: darkkhaki;
+    flex: 2;
+}
+.right {
+    background-color: darkorange;
+    flex: 1;
+}
