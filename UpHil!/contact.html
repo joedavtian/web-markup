@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Opportunities - UpHil!</title>
+    <title>Contact - UpHil!</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.svg">
 </head>
 
 <body>
     <header>
         <section>
-                <a href="index.html"><img class="logo" src="img/logo_transparent.svg"></a>
+            <a href="index.html"><img class="logo" src="img/logo_transparent.svg"></a>
             <nav>
                 <menu>
                     <li><a href="contact.html"> Opportunities</a></li>
@@ -43,28 +44,35 @@
                     <input type="radio" id="mx" name="title" value="Mx.">
                     <label for="mx">Mx.</label>
                 </section>
-        
+
                 <section id="name">
                     <section><label for="firstName">First name*:</label></section>
                     <input type="text" id="firstName" name="firstName" placeholder="James" required>
-        
+
                     <label for="lastName">Last name*:</label>
                     <input type="text" id="lastName" name="lastName" placeholder="Jones" required>
                 </section>
-        
-               <section> <section><label for="email">Email address*:</label></section>
-                <input type="email" id="email" name="email" placeholder="example@website.com" required></section>
-        
-                <section><section><label for="phone">Phone number (optional):</label></section>
-                <input type="tel" id="phone" name="phone" placeholder="0612345678" pattern="06\d{8}"></section>
-        
+
+                <section>
+                    <section><label for="email">Email address*:</label></section>
+                    <input type="email" id="email" name="email" placeholder="example@website.com" required>
+                </section>
+
+                <section>
+                    <section><label for="phone">Phone number (optional):</label></section>
+                    <input type="tel" id="phone" name="phone" placeholder="0612345678" pattern="06\d{8}">
+                </section>
+
                 <section><label for="query">Query / Request*:</label>
-                <section><textarea id="query" name="query" rows="4" placeholder="Your question here" required></textarea></section></section>
-        
+                    <section><textarea id="query" name="query" rows="4" placeholder="Your question here"
+                            required></textarea></section>
+                </section>
+
                 <input type="checkbox" id="agree" name="agree" required>
-                <label for="agree">I agree to pass my personal information to the website owner in order to proceed this request*:</label>
-        
-                <section><input type="submit" value="Send"></section>
+                <label for="agree">I agree to pass my personal information to the website owner in order to proceed this
+                    request*:</label>
+
+                <section><input class="send" type="submit" value="Send"></section>
             </form>
         </section>
         <section></section>
@@ -73,11 +81,12 @@
         <section></section>
         <section class="footer">
             <section><img src="img/logo_white.svg"></section>
-            <section><p>UpHil! © 2023. All rights reserved.</p></section>
-            <section
-                <menu>
-                    <li>Privacy policy</li>
-                    <li>Contact</li>
+            <section>
+                <p>UpHil! &copy; 2023. All rights reserved.</p>
+            </section>
+            <section <menu>
+                <li>Privacy policy</li>
+                <li><a href="contact.html">Contact</a></li>
                 </menu>
             </section>
         </section>

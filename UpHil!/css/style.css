@@ -8,6 +8,8 @@ body{
     min-height: 100vh;
     margin: 0px;
     padding: 0px;
+    display: flex;
+    flex-direction: column;
 }
 /* header */
 header{
@@ -46,9 +48,6 @@ h2 {
     letter-spacing: 1px;
     margin: 0px;
 }
-hr {
-    border-top: 1px solid #4E991C;
-}
 p strong {
     font-weight: 900;
 }
@@ -72,6 +71,18 @@ nav button {
     font-size: 1em;
 }
 button{
+    color: white;
+    line-height: 20px;
+    letter-spacing: 0.50px;
+    padding: 16px 22px;
+    background: #4E991C;
+    border: 0px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    font-size: 1.25em;
+}
+.send{
     color: white;
     line-height: 20px;
     letter-spacing: 0.50px;
@@ -147,12 +158,11 @@ p{
     padding: 50px 200px;
 }
 .list section {
-    padding: 50px;
+    padding: 50px 20px;
     text-align: left;
 }
-object {
-    height: 48px;
-    width: 48px;
+.icons {
+    display: flex;
 }
 footer {
     background-color: #697077;
@@ -187,6 +197,10 @@ footer :nth-child(3){
 .footer p {
     font-size: 14px;
 }
+.footer li a{
+    color: white;
+    text-decoration: none;
+}
 .heading {
     padding: 60px 0px;
     display: flex;
@@ -199,20 +213,23 @@ footer :nth-child(3){
 .heading p {
     margin-top: 40px;
 }
-.heading :nth-child(1), .content :nth-child(1), .form :nth-child(1){
+.heading :nth-child(1), .content :nth-child(1), .form :nth-child(1), .icons :nth-child(1){
     flex-grow: 1;
 }
-.heading :nth-child(2), .content :nth-child(2), .form :nth-child(2){
+.heading :nth-child(2), .content :nth-child(2), .form :nth-child(2), .icons :nth-child(2){
     flex-grow: 3;
     max-width: 1120px;
 }
-.heading :nth-child(3), .content :nth-child(3), .form :nth-child(3){
+.heading :nth-child(3), .content :nth-child(3), .form :nth-child(3), .icons :nth-child(3){
     flex-grow: 1;
 }
 .content {
     padding: 80px 0px;
     display: flex;
     flex: row;
+}
+.break {
+    border-bottom: 1px solid #4E991C;
 }
 .container {
     display: flex;
@@ -231,6 +248,7 @@ figure {
     min-width: 520px;
     overflow: hidden; /* Hide the overflowing parts of the image */
     position: relative;
+    margin: 0px;
 }
 figure img {
     width: 100%; /* Make the image cover the entire width of the section */
@@ -253,6 +271,19 @@ figure:hover{
 .form {
     display: flex;
     flex-direction: row;
+    flex: 1;
+}
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    width: 616px;
+    align-self: center;
 }
 #firstName, #lastName, #email, #phone {
     padding: 12px 16px;
@@ -272,4 +303,8 @@ textarea{
 @media screen and (max-width: 768px) {
     body {
       font-size: 0.9rem;
-    }}
+    }
+    nav menu {
+        visibility: hidden;
+    }
+}
