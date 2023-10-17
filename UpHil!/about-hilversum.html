@@ -7,18 +7,24 @@
     <title>About Hilversum - UpHil!</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.svg">
+    <script src="script.js"></script>
 </head>
 
 <body>
     <header>
         <section>
+            <section class="logo-menu">
                 <a href="index.html"><img class="logo" src="img/logo_transparent.svg"></a>
-            <nav>
+                <img id="myImage" class="burger" src="icons/menu-burger.svg">
+            </section>
+            <nav id="myNav">
                 <menu>
-                    <li><a href="opportunities.html">Opportunities</a></li>
-                    <li><a href="get-involved.html">Get involved</a></li>
-                    <li><a href="help-with-integration.html">Help with integration</a></li>
-                    <li id="active">About Hilversum</li>
+                    <ul>
+                        <li><a href="opportunities.html">Opportunities</a></li>
+                        <li><a href="get-involved.html">Get involved</a></li>
+                        <li><a href="help-with-integration.html">Help with integration</a></li>
+                        <li id="active">About Hilversum</li>
+                    </ul>
                 </menu>
                 <button onclick="window.location.href='contact.html';">Contact</button>
             </nav>
@@ -74,7 +80,7 @@
     </section>
     <section class="content">
         <section></section>
-        <section class="container">
+        <section class="container reverse">
             <section class="discription left">
                <p>For the 1928 Summer Olympics in neighbouring Amsterdam, Hilversum hosted all of the non-jumping equestrian and the running part of the modern pentathlon event.
 
@@ -98,11 +104,11 @@
         <section class="footer">
             <section><img src="img/logo_white.svg"></section>
             <section><p>UpHil! &copy; 2023. All rights reserved.</p></section>
-            <section
-                <menu>
-                    <li>Privacy policy</li>
-                    <li><a href="contact.html">Contact</a></li>
-                </menu>
+            <section>
+                    <ul>
+                        <li>Privacy policy</li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
             </section>
         </section>
         <section></section>

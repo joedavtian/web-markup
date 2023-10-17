@@ -10,6 +10,7 @@ body{
     padding: 0px;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 /* header */
 header{
@@ -28,12 +29,15 @@ header menu li a {
     color: #21272A;
     text-decoration: none;
 }
+.burger {
+    display: none;
+}
 #active {
     border-bottom: 2px solid #74AD00;
 }
 h1 {
     color: #21272A;
-    font-size: 42px;
+    font-size: 2.625em;
     font-family: Roboto;
     font-weight: 700;
     margin: 20px 0px;
@@ -155,7 +159,7 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 200px;
+    padding: 50px 0px;
 }
 .list section {
     padding: 50px 20px;
@@ -169,7 +173,7 @@ footer {
     color: white;
     display: flex;
     flex-direction: row;
-    padding: 32px 0px;
+    padding: 20px 0px;
 }
 .footer {
     display: flex;
@@ -204,7 +208,6 @@ footer :nth-child(3){
 .heading {
     padding: 60px 0px;
     display: flex;
-    flex: row;
     background-color: #FFDF8A;
 }
 .heading h1 {
@@ -236,7 +239,7 @@ footer :nth-child(3){
     flex-direction: row;
 }
 .discription h3 {
-    font-size: 42px;
+    font-size: 2.625em;
     font-weight: 700;
     line-height: 46.20px;
     margin-top: 10px;
@@ -304,7 +307,138 @@ textarea{
     body {
       font-size: 0.9rem;
     }
-    nav menu {
-        visibility: hidden;
+    header section {
+        width: 100%;
+        flex-direction: column;
+        justify-items: center;
+    }
+    .logo-menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .logo-menu img{
+        padding: 0px 20px;
+    }
+    .burger {
+        display: block;
+        width: 30px;
+    }
+    nav button {
+        margin: 0px;
+    }
+    nav {
+        flex-direction: column;
+        display: none;
+    }
+    menu ul{
+        padding: 0px;
+    }
+    .slide {
+        flex-direction: column-reverse;
+    }
+    .text {
+        padding: 32px 16px 48px 16px;
+    }
+    .text h1 {
+        margin: 0px;
+    }
+    .figure img {
+        width: 100%;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+
+    }
+    .figure img:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+        transition-duration: 1s;
+    }
+    menu {
+        text-align: center;
+        width: 100%;
+        padding: 0px;
+    }
+    nav menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .heading {
+        padding: 48px 0px;
+    }
+    .heading :nth-child(1), .heading :nth-child(3), .content :nth-child(1), .content :nth-child(3){
+        flex-grow: 0;
+    }
+    .first, .heading h1{
+        font-size: 32px;
+        margin: 0px 16px;
+    }
+    .heading p{
+        padding: 0px 16px;
+    }
+    .container {
+        padding: 0px 16px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .reverse {
+        flex-direction: column-reverse;
+    }
+    .content {
+        padding: 45px 0px;
+    }
+    figure {
+        min-width: 358px;
+        width: 358px;
+        height: 280px;
+        overflow: hidden;
+    }
+    figure img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+    }
+    .discription {
+        margin-top:32px;
+        padding: 0px;
+        width: 358px;
+    }
+    .discription p {
+        margin: 25px 0px;
+    }
+    .discription h3 {
+        font-size: 1.5em;
+    }
+    button {
+        font-size: 0.875em;
+    }
+    footer{
+        align-items: flex-end;
+    }
+    .footer :nth-child(3){
+        display: none;
+    }
+    .footer {
+        flex-direction: column;
+    }
+    .footer ul {
+        padding: 0px;
+    }
+    .footer p {
+        padding: 10px;
+    }
+    .footer img {
+        padding: 15px 0px;
+    }
+    .list {
+        flex-direction: column;
+    }
+    .list section {
+        text-align: center;
+        padding: 20px 20px;
+    }
+    .topics h1 {
+        font-size: 1.5em;
+        text-align: center;
+        padding: 0px 16px;
     }
 }

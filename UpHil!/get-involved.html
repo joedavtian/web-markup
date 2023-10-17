@@ -7,18 +7,24 @@
     <title>Get involved - UpHil!</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.svg">
+    <script src="script.js"></script>
 </head>
 
 <body>
     <header>
         <section>
+            <section class="logo-menu">
                 <a href="index.html"><img class="logo" src="img/logo_transparent.svg"></a>
-            <nav>
+                <img id="myImage" class="burger" src="icons/menu-burger.svg">
+            </section>
+            <nav id="myNav">
                 <menu>
-                    <li><a href="opportunities.html">Opportunities</a></li>
-                    <li id="active">Get involved</li>
-                    <li><a href="help-with-integration.html">Help with integration</a></li>
-                    <li><a href="about-hilversum.html">About Hilversum</a></li>
+                    <ul>
+                        <li><a href="opportunities.html">Opportunities</a></li>
+                        <li id="active">Get involved</li>
+                        <li><a href="help-with-integration.html">Help with integration</a></li>
+                        <li><a href="about-hilversum.html">About Hilversum</a></li>
+                    </ul>
                 </menu>
                 <button onclick="window.location.href='contact.html';">Contact</button>
             </nav>
@@ -54,7 +60,7 @@
     </section>
     <section class="content break">
         <section></section>
-        <section class="container">
+        <section class="container reverse">
             <section class="discription left">
                 <h2>Hilversum</h2>
                 <h3>Friend4Friend</h3>
@@ -89,11 +95,11 @@
         <section class="footer">
             <section><img src="img/logo_white.svg"></section>
             <section><p>UpHil! &copy; 2023. All rights reserved.</p></section>
-            <section
-                <menu>
-                    <li>Privacy policy</li>
-                    <li><a href="contact.html">Contact</a></li>
-                </menu>
+            <section>
+                    <ul>
+                        <li>Privacy policy</li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
             </section>
         </section>
         <section></section>

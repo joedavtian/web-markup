@@ -7,18 +7,24 @@
     <title>UpHil! - Integration guide</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.svg">
+    <script src="script.js"></script>
 </head>
 
 <body>
     <header>
         <section>
-            <img class="logo" src="img/logo_transparent.svg">
-            <nav>
+            <section class="logo-menu">
+                <img class="logo" src="img/logo_transparent.svg">
+                <img id="myImage" class="burger" src="icons/menu-burger.svg">
+            </section>
+            <nav id="myNav">
                 <menu>
-                    <li id="passive"><a href="opportunities.html">Opportunities</a></li>
-                    <li><a href="get-involved.html">Get involved</a></li>
-                    <li><a href="help-with-integration.html">Help with integration</a></li>
-                    <li><a href="about-hilversum.html">About Hilversum</a></li>
+                    <ul>
+                        <li id="passive"><a href="opportunities.html">Opportunities</a></li>
+                        <li><a href="get-involved.html">Get involved</a></li>
+                        <li><a href="help-with-integration.html">Help with integration</a></li>
+                        <li><a href="about-hilversum.html">About Hilversum</a></li>
+                    </ul>
                 </menu>
                 <button onclick="window.location.href='contact.html';">Contact</button>
             </nav>
@@ -27,8 +33,8 @@
     <section class="slide">
         <section class="text">
             <h1 class="first">UpHil! - integration guide</h1>
-            <p>Are you a newcomer in Hilversum and you need information?<br> We are here to answer your questions. We
-                aim to help new residence with the<br> essential information they need for integration in the city and
+            <p>Are you a newcomer in Hilversum and you need information? We are here to answer your questions. We
+                aim to help new residence with the essential information they need for integration in the city and
                 the Netherlands. </p>
             <button onclick="window.location.href='opportunities.html';">Boost your opportunities</button>
         </section>
@@ -73,10 +79,11 @@
             <section>
                 <p>UpHil! &copy; 2023. All rights reserved.</p>
             </section>
-            <section <menu>
-                <li>Privacy policy</li>
-                <li><a href="contact.html">Contact</a></li>
-                </menu>
+            <section>
+                    <ul>
+                        <li>Privacy policy</li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
             </section>
         </section>
         <section></section>
