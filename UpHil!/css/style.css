@@ -326,6 +326,7 @@ textarea{
     }
     nav button {
         margin: 0px;
+        margin-top: 5px;
     }
     nav {
         flex-direction: column;
