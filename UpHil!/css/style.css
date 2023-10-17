@@ -111,14 +111,14 @@ li {
 .slide {
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: flex-end;
     background-color: #FFDF8A;
     align-items: center; 
 }
 .text {
+    width: 650px;
     padding-top: 160px;
     padding-bottom: 80px;
-    padding-left: 160px;
     padding-right: 300px;
 }
 .figure img {
@@ -288,8 +288,19 @@ form {
     width: 616px;
     align-self: center;
 }
+#name {
+    display: flex;
+}
+#name section{
+    display: flex;
+    flex-direction: column;
+}
+#title {
+    margin: 10px 0px;
+}
 #firstName, #lastName, #email, #phone {
     padding: 12px 16px;
+    width: 300px;
     background-color: #F2F4F8;
     border-top: none ;
     border-left: none;
@@ -301,7 +312,18 @@ input {
     margin: 10px 0px;
 }
 textarea{
-    margin: 10px 0px;
+    margin-top: 20px;
+    width: 70%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-top: none ;
+    border-left: none;
+    border-right: none ;
+    font-family: inherit;
+    border-bottom: #C1C7CD 1px solid;
+    background-color: #F2F4F8;
+    font-size: 1em;
 }
 @media screen and (max-width: 768px) {
     body {
@@ -339,6 +361,7 @@ textarea{
         flex-direction: column-reverse;
     }
     .text {
+        width: auto;
         padding: 32px 16px 48px 16px;
     }
     .text h1 {
@@ -389,8 +412,8 @@ textarea{
     }
     figure {
         min-width: 358px;
-        width: 358px;
-        height: 280px;
+        width: 80%;
+        min-height: 300px;
         overflow: hidden;
     }
     figure img {
@@ -401,7 +424,7 @@ textarea{
     .discription {
         margin-top:32px;
         padding: 0px;
-        width: 358px;
+        width: 80%;
     }
     .discription p {
         margin: 25px 0px;
@@ -441,5 +464,24 @@ textarea{
         font-size: 1.5em;
         text-align: center;
         padding: 0px 16px;
+    }
+    form {
+        width: 100%;
+        padding: 10px 16px;
+    }
+    #name {
+        flex-direction: column;
+    }
+    textarea{
+        width: 100%;
+    }
+    #firstName, #lastName, #email, #phone{
+        width: 90%;
+    }
+    .send{
+        font-size: 1em;
+    }
+    .send-button{
+        display: flex;
     }
 }
