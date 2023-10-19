@@ -11,8 +11,24 @@ body{
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+    word-spacing: normal;
 }
 /* header */
+a{
+    color: #328335;
+    font-size: 1.125em;
+    font-family: Roboto;
+    font-weight: 400;
+    text-decoration: underline;
+    line-height: 25.20px;
+}
+a:hover{
+    color: #4E991C;
+    text-decoration: none;
+}
+a:active{
+    color: black;
+}
 header{
     display: flex;
     justify-content: center;
@@ -25,9 +41,16 @@ header section{
     align-items: center;
     max-width: 1120px;
 }
-header menu li a {
+li > a {
+    font-size: 1em;
     color: #21272A;
     text-decoration: none;
+}
+li > a:hover{
+    color: #21272A;
+}
+li > a:active{
+    color: #21272A;
 }
 .burger {
     display: none;
@@ -54,6 +77,9 @@ h2 {
 }
 p strong {
     font-weight: 900;
+}
+p::first-letter{
+    text-transform: uppercase;
 }
 .logo {
     width: 94px;
@@ -229,7 +255,6 @@ footer :nth-child(3){
 .content {
     padding: 80px 0px;
     display: flex;
-    flex: row;
 }
 .break {
     border-bottom: 1px solid #4E991C;
@@ -245,6 +270,7 @@ footer :nth-child(3){
     margin-top: 10px;
 }
 .discription p {
+    text-indent: 10px;
     margin-bottom: 64px;
 }
 figure {
@@ -253,7 +279,7 @@ figure {
     position: relative;
     margin: 0px;
 }
-figure img {
+figure > img {
     width: 100%; /* Make the image cover the entire width of the section */
     height: auto; /* Maintain the aspect ratio */
     position: absolute;
@@ -354,9 +380,6 @@ textarea{
         flex-direction: column;
         display: none;
     }
-    menu ul{
-        padding: 0px;
-    }
     .slide {
         flex-direction: column-reverse;
     }
@@ -382,7 +405,7 @@ textarea{
         width: 100%;
         padding: 0px;
     }
-    nav menu ul {
+    nav menu {
         display: flex;
         flex-direction: column;
     }
@@ -424,7 +447,7 @@ textarea{
     .discription {
         margin-top:32px;
         padding: 0px;
-        width: 80%;
+        width: 95%;
     }
     .discription p {
         margin: 25px 0px;

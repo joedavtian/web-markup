@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="integration, hilversum, uphil!, contact, contact form, email">
     <title>Contact - UpHil!</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="icon" type="image/x-icon" href="img/favicon.svg">
     <script src="script.js"></script>
 </head>
@@ -14,17 +15,15 @@
     <header>
         <section>
             <section class="logo-menu">
-                <a href="index.html"><img class="logo" src="img/logo_transparent.svg"></a>
-                <img id="myImage" class="burger" src="icons/menu-burger.svg">
+                <a href="index.html"><img alt="logo" class="logo" src="img/logo_transparent.svg"></a>
+                <img alt="decoration" id="myImage" class="burger" src="icons/menu-burger.svg">
             </section>
             <nav id="myNav">
                 <menu>
-                    <ul>
                         <li><a href="opportunities.html">Opportunities</a></li>
                         <li><a href="get-involved.html">Get involved</a></li>
                         <li><a href="help-with-integration.html">Help with integration</a></li>
                         <li><a href="about-hilversum.html">About Hilversum</a></li>
-                    </ul>
                 </menu>
                 <button>Contact</button>
             </nav>
@@ -41,8 +40,10 @@
         <section></section>
         <section class="form-container">
             <form action="thankyou.html" method="post">
+                <fieldset>
+                <legend>Contact form</legend>
                 <section id="title">
-                    <label for="title">Title*:</label>
+                    <label>Title*:</label>
                     <input type="radio" id="mr" name="title" value="Mr.">
                     <label for="mr">Mr.</label>
                     <input type="radio" id="mrs" name="title" value="Mrs.">
@@ -50,7 +51,7 @@
                     <input type="radio" id="mx" name="title" value="Mx.">
                     <label for="mx">Mx.</label>
                 </section>
-
+            
                 <section id="name">
                     <section><label for="firstName">First name*:</label>
                     <input type="text" id="firstName" name="firstName" placeholder="James" required></section>
@@ -77,8 +78,8 @@
                 <section><input type="checkbox" id="agree" name="agree" required>
                 <label for="agree">I agree to pass my personal information to the website owner in order to proceed this
                     request*:</label></section>
-                <p>* required fields</p>
-
+                <p><em>* required fields</em></p>
+            </fieldset>
                 <section class="send-button"><input class="send" type="submit" value="Send"></section>
             </form>
         </section>
@@ -87,7 +88,7 @@
     <footer>
         <section></section>
         <section class="footer">
-            <section><img src="img/logo_white.svg"></section>
+            <section><img alt="logo" src="img/logo_white.svg"></section>
             <section>
                 <p>UpHil! &copy; 2023. All rights reserved.</p>
             </section>
@@ -98,7 +99,6 @@
                     </ul>
             </section>
             </section>
-        </section>
         <section></section>
     </footer>
 </body>
