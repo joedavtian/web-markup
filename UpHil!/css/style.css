@@ -13,6 +13,25 @@ body{
     box-sizing: border-box;
     word-spacing: normal;
 }
+#cookie-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: gray;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    z-index: 9999;
+}
+#cookie-popup button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
 /* header */
 a{
     color: #328335;
@@ -362,6 +381,7 @@ textarea{
     }
     .logo-menu{
         display: flex;
+        float: left;
         flex-direction: row;
         justify-content: space-between;
     }

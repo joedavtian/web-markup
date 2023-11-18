@@ -14,3 +14,24 @@ img.addEventListener('click', function() {
   }
 });
   }
+
+  // Whith the help of AI I implemented the code for cookies. 
+  document.addEventListener("DOMContentLoaded", function () {
+    var cookiePopup = document.getElementById("cookie-popup");
+    var acceptButton = document.querySelector("#cookie-popup button");
+
+    var isCookiesAccepted = localStorage.getItem("cookiesAccepted");
+
+    if (!isCookiesAccepted) {
+        cookiePopup.style.display = "block";
+    }
+
+    acceptButton.addEventListener("click", function () {
+        localStorage.setItem("cookiesAccepted", "true");
+        hideCookiePopup();
+    });
+});
+
+function hideCookiePopup() {
+    document.getElementById("cookie-popup").style.display = "none";
+}
